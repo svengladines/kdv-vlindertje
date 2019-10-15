@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700');
+
+image-carousel {
+  height: 200px;
+  width: 60%;
+  border: 3px solid black;
+}
+
+.timeline-item {
+    padding: 3em 2em 2em;
+    position: relative;
+    color: rgba(0, 0, 0, 0.7);
+    border-left: 2px solid rgba(0, 0, 0, 0.3);
+  }
+  .timeline-item p {
+    font-size: 1rem;
+  }
+  .timeline-item::before {
+    content: attr(time-is);
+    position: absolute;
+    left: 2em;
+    font-weight: bold;
+    top: 1em;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: .785rem;
+  }
+  .timeline-item::after {
+    width: 10px;
+    height: 10px;
+    display: block;
+    top: 1em;
+    position: absolute;
+    left: -7px;
+    border-radius: 10px;
+    content: '';
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    background: white;
+  }
+
+  .timeline-item:last-child {
+      border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+      border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+  }
+
+  .mdl-grid {
+    max-width: 600px;
+  }
+  .mdl-card__media {
+    margin: 0;
+  }
+  .mdl-card__media > img {
+    max-width: 100%;
+  }
+  .mdl-card__actions {
+    display: flex;
+    box-sizing:border-box;
+    align-items: center;
+  }
+  .mdl-card__actions > .mdl-button--icon {
+    margin-right: 3px;
+    margin-left: 3px;
+  }
+
+  #address-map {
+    height: 300px;
+  }
+
+  .heading {
+    padding-top: 1rem;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
+    background-color: #e0efe3;
+  }
+
+  .heading h1 {
+    color: #24564b
+  }
+
+  .heading-background {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .heading::after {
+    content: "";
+    position: relative;
+    top: calc( 3rem - 4rem / 2);
+    /* padding - height/2 */
+    float: left;
+    display: block;
+    height: 4rem;
+    width: 100vw;
+    background: hsla(0, 0%, 100%, 0.5);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 70 500 60' preserveAspectRatio='none'%3E%3Crect x='0' y='0' width='500' height='500' style='stroke: none; fill: %23ffffff;' /%3E%3Cpath d='M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z' style='stroke: none; fill: %23e0efe3;'%3E%3C/path%3E%3C/svg%3E");
+    background-size: 100% 100%;
+  }
