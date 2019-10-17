@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700');
 
+footer {
+  color: white;
+  background-color: #24564b;
+}
+
+footer p {
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
+.site-footer__content {
+  color: white;
+}
+
 image-carousel {
   height: 200px;
   width: 60%;
