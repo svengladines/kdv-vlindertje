@@ -122,3 +122,18 @@ image-carousel {
     display: inline;
     padding-left: 1em;
   }
+  
+  #jumpto {
+  	position: absolute;
+  	top: 3em;
+  	right: 1em;
+  } 
+  
+  .banners {
+  	display: flex;
+  }
+  
+  .banner {
+  	width: 25%;
+  	padding: 1em;
+  }

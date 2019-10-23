@@ -117,25 +117,6 @@
 
           <div class="grid__item medium-up--one-quarter text-right site-header__icons">
             <div class="site-header__icons-wrapper">
-              <div class="site-header__search site-header__icon">
-                <form action="https://www.nonadrinks.com/search" method="get" class="search-header search"
-                  role="search">
-                  <input class="search-header__input search__input" type="search" name="q" placeholder="Search"
-                    aria-label="Search">
-                  <button class="search-header__submit search__submit btn--link site-header__icon" type="submit">
-                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search"
-                      viewBox="0 0 37 40">
-                      <path
-                        d="M35.6 36l-9.8-9.8c4.1-5.4 3.6-13.2-1.3-18.1-5.4-5.4-14.2-5.4-19.7 0-5.4 5.4-5.4 14.2 0 19.7 2.6 2.6 6.1 4.1 9.8 4.1 3 0 5.9-1 8.3-2.8l9.8 9.8c.4.4.9.6 1.4.6s1-.2 1.4-.6c.9-.9.9-2.1.1-2.9zm-20.9-8.2c-2.6 0-5.1-1-7-2.9-3.9-3.9-3.9-10.1 0-14C9.6 9 12.2 8 14.7 8s5.1 1 7 2.9c3.9 3.9 3.9 10.1 0 14-1.9 1.9-4.4 2.9-7 2.9z">
-                      </path>
-                    </svg>
-                    <span class="icon__fallback-text">Submit</span>
-                  </button>
-                </form>
-
-              </div>
-
-
               <button type="button"
                 class="btn--link site-header__icon site-header__menu js-mobile-nav-toggle mobile-nav--open"
                 aria-controls="MobileNav" aria-expanded="false" aria-label="Menu">
@@ -249,7 +230,7 @@
                             </p>
                         </div>
                                 <div class="mdl-card__actions mdl-card--border">
-                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Route</a>
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"></a>
                     <div class="mdl-layout-spacer"></div>
                       <button class="mdl-button mdl-button--icon mdl-button--colored"><i class="material-icons-outlined">directions_car</i></button>
                     </div>
@@ -264,17 +245,20 @@
                           <h1 class="mdl-card__title-text">Openbaar vervoer</h1>
                         </div>
                         <div class="mdl-card__supporting-text">
-                            <p><strong>Bus</strong><br/>
-                              Station Vertrijk ligt op 200 meter.
+                            <p><strong>Trein</strong><br/>
+                              Station <a href="http://www.belgianrail.be/nl/stations-en-trein/zoek-een-station/4/vertrijk.aspx">Vertrijk</a> ligt op 200 meter.
                           </p>
-                          <p><strong>Bus</strong><br/>
-                            Halte Stationsstraat.
+                          <p><strong>Bus</strong>
+                          <ul>
+                            <li>Halte <a href="https://www.delijn.be/nl/haltes/halte/300692/Boutersem_Stationsstraat#2">Stationsstraat</a> (Leuven-Tienen).</li>
+                            <li>Halte <a href="https://www.delijn.be/nl/haltes/halte/300694/Boutersem_Stationsstraat#2">Stationsstraat</a> (Tienen-Leuven).</li>
+                            </ul>
                         </p>
                         </div>
                         <div class="mdl-card__actions mdl-card--border">
-                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Route</a>
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"></a>
                     <div class="mdl-layout-spacer"></div>
-                      <button class="mdl-button mdl-button--icon mdl-button--colored"><i class="material-icons-outlined">directions_railway</i></button>
+                      <button class="mdl-button mdl-button--icon mdl-button--colored"><i class="material-icons-outlined">directions_railway</i></a></button>
                           <button class="mdl-button mdl-button--icon mdl-button--colored"><i class="material-icons-outlined">directions_bus</i></button>
                     </div>
                       </div>
@@ -289,111 +273,66 @@
 
     </main>
 
-    <div id="shopify-section-footer" class="shopify-section border-top">
-      <style>
-        .site-footer__hr {
-          border-bottom: 1px solid #e6e6e6;
-        }
-
-        .site-footer p,
-        .site-footer h4,
-        .site-footer small {
-          color: #000000;
-        }
-
-        .site-footer {
-          background-color: #ffffff;
-        }
-
-        .site-footer a:hover {
-          color: #404040;
-        }
-      </style>
-
-      <footer class="site-footer" role="contentinfo">
-        <div class="page-width">
-          <div class="site-footer__content">
-            <div class="site-footer__item
-                  
-                  site-footer__item--one-third
-                  ">
-              <div class="site-footer__item-inner site-footer__item-inner--link_list">
-                <p class="h4">Menu</p>
-                <ul class="site-footer__linklist
-                          ">
-                  <li class="site-footer__linklist-item">
-                    <a href="index.html">
-                      Welkom
-                    </a>
-                  </li>
-                  <li class="site-footer__linklist-item">
-                    <a href="over-ons.html">
-                      Over ons
-                    </a>
-                  </li>
-                  <li class="site-footer__linklist-item">
-                    <a href="praktisch.html">
-                      Praktisch
-                    </a>
-                  </li>
-                  <li class="site-footer__linklist-item">
-                    <a href="links.html">
-                      Links
-                    </a>
-                  </li>
-                  <li class="site-footer__linklist-item">
-                    <a href="contact.html">
-                      Contact
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="site-footer__item site-footer__item--one-third">
-              <div class="site-footer__item-inner site-footer__item-inner--text">
-                <p class="h4">Contact</p>
-                <div class="site-footer__rte">
-                    <p>
-                      <a href="tel:+3216733098">016/73.30.98</a>
-                    </p>
-                    <p>
-                      <a href="mailto:info@kdvvlindertje.be" aria-describedby="a11y-external-message">info@kdvvlindertje.be</a>
-                    </p>
-                </div>
-              </div>
-            </div>
+    <footer class="site-footer" role="contentinfo">
+    <div class="page-width">
+    <div class="site-footer__content">
+      <div class="site-footer__item
+            
+            site-footer__item--one-third
+            ">
+        <div class="site-footer__item-inner site-footer__item-inner--link_list">
+          <p class="h4">Menu</p>
+          <ul class="site-footer__linklist
+                    ">
+            <li class="site-footer__linklist-item">
+              <a href="index.html">
+                Welkom
+              </a>
+            </li>
+            <li class="site-footer__linklist-item">
+              <a href="over-ons.html">
+                Over ons
+              </a>
+            </li>
+            <li class="site-footer__linklist-item">
+              <a href="praktisch.html">
+                Praktisch
+              </a>
+            </li>
+            <li class="site-footer__linklist-item">
+              <a href="links.html">
+                Links
+              </a>
+            </li>
+            <li class="site-footer__linklist-item">
+              <a href="contact.html">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__item site-footer__item--one-third">
+        <div class="site-footer__item-inner site-footer__item-inner--text">
+          <p class="h4">Contact</p>
+          <div class="site-footer__rte">
+              <p>
+                <a href="tel:+3216733098">016/73.30.98</a>
+              </p>
+              <p>
+                <a href="mailto:info@kdvvlindertje.be" aria-describedby="a11y-external-message">info@kdvvlindertje.be</a>
+              </p>
+              <p>
+                <small class="site-footer__copyright-content">© 2019, <a href="/" title="">Vlindertje</a></small>
+              </p>
           </div>
         </div>
-
-        <hr class="site-footer__hr">
-
-        <div class="page-width">
-          <div class="grid grid--no-gutters small--text-center">
-            <div class="grid__item">
-              <small class="site-footer__copyright-content">© 2019, <a href="/" title="">Vlindertje</a></small>
-            </div>
-          </div>
-        </div>
-      </footer>
-
+      </div>
+    </div>
   </div>
 
-  <div id="slideshow-info" class="visually-hidden" aria-hidden="true">Use left/right arrows to navigate the slideshow or
-    swipe left/right if using a mobile device</div>
+	</footer>
 
-  </div>
-
-  <ul hidden="">
-    <li id="a11y-refresh-page-message">choosing a selection results in a full page refresh</li>
-    <li id="a11y-selection-message">press the space key then arrow keys to make a selection</li>
-  </ul>
-
-
-  <ul hidden="true">
-    <li id="a11y-new-window-message">Opens in a new window.</li>
-    <li id="a11y-external-message">Opens external website.</li>
-    <li id="a11y-new-window-external-message">Opens external website in a new window.</li>
-  </ul>
 </body>
 
 <script>
