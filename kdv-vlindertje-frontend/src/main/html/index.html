@@ -27,15 +27,9 @@
   <link href="resources/css/vlindertje.css" rel="stylesheet" type="text/css" media="all"/>
 
 
-
-  <script type="text/javascript" async="" src="./vlinderke/38123fcd64c8e78e0e0a0fa87.js.download"></script>
-  <script type="text/javascript" async="" src="./vlinderke/weglot_script_tag.js.download"></script>
-  <script type="text/javascript" async="" src="./vlinderke/trekkie.storefront.min.js.download"></script>
-  <script src="./vlinderke/lazysizes.js.download" async="async"></script>
-  <script src="./vlinderke/vendor.js.download" defer="defer"></script>
-  <script src="./vlinderke/theme.js.download" defer="defer"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="resources/javascript/vlindertje.js"></script>
   
-  <link rel="stylesheet" type="text/css" href="./vlinderke/weglot.min.css">
 </head>
 
 <body class="template-index">
@@ -77,21 +71,11 @@
                 </a>
               </li>
 
-
-
-
-
-
               <li>
                 <a href="over-ons.html" class="site-nav__link site-nav__link--main">
                   <span class="site-nav__label">Over ons</span>
                 </a>
               </li>
-
-
-
-
-
 
               <li>
                 <a href="praktisch.html" class="site-nav__link site-nav__link--main">
@@ -175,6 +159,7 @@
   <div class="page-container drawer-page-content" id="PageContainer">
 
     <main class="main-content js-focus-hidden" id="MainContent" role="main" tabindex="-1" >
+      
       <article class="heading">
         <div class="grid">
           <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
@@ -188,7 +173,9 @@
             </div>
           </div>
         </div>
+        </div>
       </article>
+      
       <div class="page-width">
 
              <div id="jumpto" class="mdl-card mdl-shadow--2dp">
@@ -207,6 +194,51 @@
              </div>
              
      </div>
+     
+     <div id="galery-container" class="page-width">
+
+        <div id="galery">
+  			<ul id="slides">
+			    <li class="slide">
+			      <div class="slide-partial slide-left"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/forest-left.jpg"/></div>
+			      <div class="slide-partial slide-right"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/forest-right.jpg"/></div>
+			      <h1 class="title"><span class="title-text">Forest</span></h1>
+			    </li>
+			    <li class="slide">
+			      <div class="slide-partial slide-left"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/mountain-left.jpg"/></div>
+			      <div class="slide-partial slide-right"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/mountain-right.jpg"/></div>
+			      <h1 class="title"><span class="title-text">Mountain</span></h1>
+			    </li>
+			    <li class="slide">
+			      <div class="slide-partial slide-left"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/ocean-left.jpg"/></div>
+			      <div class="slide-partial slide-right"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/ocean-right.jpg"/></div>
+			      <h1 class="title"><span class="title-text">Ocean</span></h1>
+			    </li>
+			    <li class="slide">
+			      <div class="slide-partial slide-left"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/canyon-left.jpg"/></div>
+			      <div class="slide-partial slide-right"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/canyon-right.jpg"/></div>
+			      <h1 class="title"><span class="title-text">Canyon</span></h1>
+			    </li>
+			    <li class="slide">
+			      <div class="slide-partial slide-left"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/lake-left.jpg"/></div>
+			      <div class="slide-partial slide-right"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/lake-right.jpg"/></div>
+			      <h1 class="title"><span class="title-text">Lake</span></h1>
+			    </li>
+			  </ul>
+			  <ul id="slide-select">
+			    <li class="btn prev"><</li>
+			    <li class="selector"></li>
+			    <li class="selector"></li>
+			    <li class="selector"></li>
+			    <li class="selector"></li>
+			    <li class="selector"></li>
+			    <li class="btn next">></li>
+			  </ul>
+     	</div>        
+     </div>
+     
+     
+     
      <div class="page-width banners">
      	<div class="banner">
      		<a href="http://sporza.be"><img src="resources/images/btss.jpg"></a>
