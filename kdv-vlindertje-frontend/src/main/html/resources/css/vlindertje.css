@@ -56,7 +56,7 @@ footer a {
   }
 
   .mdl-grid {
-    max-width: 600px;
+    max-width: 1200px;
   }
   .mdl-card__media {
     margin: 0;
@@ -89,7 +89,8 @@ footer a {
   }
 
   .heading h1 {
-    color: #24564b
+    color: #24564b;
+    margin-bottom: 2rem;
   }
 
   .heading-background {
@@ -118,26 +119,16 @@ footer a {
     padding-left: 1em;
   }
   
-  #jumpto {
-  	position: absolute;
-  	top: 3em;
-  	right: 1em;
-  } 
-  
   .banners {
+  	margin-top: 35px;
   	display: flex;
   }
   
   .banner {
-  	width: 25%;
+  	width: 33%;
   	padding: 1em;
   }
- 
-#galery-container {
-	position: relative;	
-}
 
-#galery {
-  width: 80%;
-  overflow: hidden;
+#jumpto {
+	background-color: #eeeeee;
 }
