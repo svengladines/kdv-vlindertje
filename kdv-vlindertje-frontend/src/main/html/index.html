@@ -49,7 +49,7 @@
               </li>
               <li class="site-nav--active">
                 <a href="index.html" class="site-nav__link site-nav__link--main site-nav__link--active" aria-current="page">
-                  <span class="site-nav__label">Home</span>
+                  <span class="site-nav__label">Welkom</span>
                 </a>
               </li>
               <li>
@@ -186,7 +186,7 @@
 		         
 		         <div class="mdl-card mdl-shadow--2dp mdl-cell">
 		           <figure class="mdl-card__media">
-		           		<img src="resources/images/galery-1.jpg"/>
+		           		<img src="resources/images/galery-2.jpg"/>
 		           </figure>
 		         </div>
 		         
@@ -194,7 +194,7 @@
 		           <figure class="mdl-card__media">
 		           </figure>
 		           <div class="mdl-card__title">
-		             <h1 class="mdl-card__title-text">Steekkaart</h1>
+		             <h1 class="mdl-card__title-text">In een notendop</h1>
 		           </div>
 		           <div class="mdl-card__supporting-text">
 		               <ul>
@@ -207,7 +207,7 @@
 		         
 		          <div class="mdl-card mdl-shadow--2dp mdl-cell">
 		           <figure class="mdl-card__media">
-		           		<img src="resources/images/galery-1.jpg"/>
+		           		<img src="resources/images/galery-3.jpg"/>
 		           </figure>
 		         </div>
          
@@ -219,13 +219,13 @@
      
      <div class="page-width banners">
      	<div id="banner-1" class="banner">
-     		<a href="http://sporza.be"><img src="resources/images/btss.jpg"></a>
+     		
      	</div>
      	<div id="banner-2" class="banner">
-     		<a href="http://sporza.be"><img src="resources/images/bvba-wouters.png"></a>
+     		
      	</div>
      	<div id="banner-3" class="banner">
-     		<a href="http://sporza.be"><img src="resources/images/asap-slotenmaker.jpg"></a>
+     		
      	</div>
      </div>
      
@@ -308,6 +308,32 @@
     <li id="a11y-external-message">Opens external website.</li>
     <li id="a11y-new-window-external-message">Opens external website in a new window.</li>
   </ul>
+  
+  <script>
+  	var $jq = jQuery.noConflict();
+  	
+  	var loadBanners = function() {
+
+  	    $jq.getJSON( "resources/json/banners.json", { format: "json" })
+  		    .done(function( banners ) {
+  				var i = banners;
+  			})
+  	  	    .always(function( xhr ) {
+  				var i = xhr;
+  			})
+  		.fail(function( jqxhr, textStatus, error ) {
+  	    var err = textStatus + ", " + error;
+  	    console.log( "Request Failed: " + err );
+  	})
+  	
+	jQuery( document ).ready(function() {
+	
+		loadMatchStatus();
+	
+	});
+
+  	
+  </script>
 </body>
 
 </html>

@@ -132,3 +132,9 @@ footer a {
 #jumpto {
 	background-color: #eeeeee;
 }
+
+.link-info {
+	margin-left: 1rem; 
+	font-size: small;
+	color: #aaaaaa;
+}
