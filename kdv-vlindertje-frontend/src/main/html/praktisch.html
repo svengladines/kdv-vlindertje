@@ -23,6 +23,9 @@
 
   <link href="resources/css/theme.css" rel="stylesheet" type="text/css" media="all"/>
   <link href="resources/css/vlindertje.css" rel="stylesheet" type="text/css" media="all"/>
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="resources/javascript/vlindertje.js"></script>
 
 </head>
 
@@ -427,14 +430,11 @@
       </div>
       
       <div class="page-width banners">
-     	<div id="banner-7" class="banner">
-     		<a href="http://sporza.be"><img src="resources/images/btss.jpg"></a>
+     	<div id="banner-7" class="banner" data-banner-index="7">
      	</div>
-     	<div id="banner-8" class="banner">
-     		<a href="http://sporza.be"><img src="resources/images/bvba-wouters.png"></a>
+     	<div id="banner-8" class="banner" data-banner-index="8">
      	</div>
-     	<div id="banner-9" class="banner">
-     		<a href="http://sporza.be"><img src="resources/images/asap-slotenmaker.jpg"></a>
+     	<div id="banner-9" class="banner" data-banner-index="9">
      	</div>
      </div>
 
@@ -502,22 +502,16 @@
 
   </div>
 
-  <div id="slideshow-info" class="visually-hidden" aria-hidden="true">Use left/right arrows to navigate the slideshow or
-    swipe left/right if using a mobile device</div>
-
-  </div>
-
-  <ul hidden="">
-    <li id="a11y-refresh-page-message">choosing a selection results in a full page refresh</li>
-    <li id="a11y-selection-message">press the space key then arrow keys to make a selection</li>
-  </ul>
-
-
-  <ul hidden="true">
-    <li id="a11y-new-window-message">Opens in a new window.</li>
-    <li id="a11y-external-message">Opens external website.</li>
-    <li id="a11y-new-window-external-message">Opens external website in a new window.</li>
-  </ul>
+	<script>
+  	
+		jQuery( document ).ready(function() {
+		
+			$jq = jQuery.noConflict();
+			loadBanners();
+		
+		});
+  	
+	</script>
 </body>
 
 </html>

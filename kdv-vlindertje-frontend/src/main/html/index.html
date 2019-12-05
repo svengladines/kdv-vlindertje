@@ -26,7 +26,6 @@
   <link href="resources/css/theme.css" rel="stylesheet" type="text/css" media="all"/>
   <link href="resources/css/vlindertje.css" rel="stylesheet" type="text/css" media="all"/>
 
-
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script type="text/javascript" src="resources/javascript/vlindertje.js"></script>
   
@@ -218,13 +217,13 @@
      </div>
      
      <div class="page-width banners">
-     	<div id="banner-1" class="banner" banner-index="1">
+     	<div id="banner-1" class="banner" data-banner-index="1">
      		
      	</div>
-     	<div id="banner-2" class="banner" banner-index="2">
+     	<div id="banner-2" class="banner" data-banner-index="2">
      		
      	</div>
-     	<div id="banner-3" class="banner" banner-index="3">
+     	<div id="banner-3" class="banner" data-banner-index="3">
      		
      	</div>
      </div>
@@ -294,48 +293,12 @@
 
   <script>
   	
-  	var loadBanners = function() {
-
-  	    $jq.getJSON( "resources/json/banners.json", { format: "json" })
-  		    .done(function( banners ) {
-  		    	
-  				fillBanners( banners );
-  				
-  			})
-  	  	    .always(function( xhr ) {
-  				var i = xhr;
-  			})
-  			.fail(function( jqxhr, textStatus, error ) {
-  	    		var err = textStatus + ", " + error;
-  	    		console.log( "Request Failed: " + err );
-  			});
-  	};
-  	
-  	var fillBanners = function(banners) {
-  		
-  		var now = new Date();
-  		var fullDaysSinceEpoch = Math.floor(now/8.64e7);
-  		var shifter = 0;
-  		$jq( ".banner" ).each( function() {
-  			
-  			var elementID = 0 + $jq(this).attr("banner-index");
-  			var index = elementID + fullDaysSinceEpoch % 14;
-  			var banner = banners[index];
-  			var a = $jq("<a/>").attr("href",banner.link);
-  			var i = $jq("<img/>").attr("src",banner.img);
-  			a.append( i );
-  			$jq(this).append( a );
-  		});
-  		
-  	};
-  	
 	jQuery( document ).ready(function() {
 	
 		$jq = jQuery.noConflict();
 		loadBanners();
 	
 	});
-
   	
   </script>
 </body>

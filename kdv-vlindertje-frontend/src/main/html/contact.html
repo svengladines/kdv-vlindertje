@@ -27,6 +27,9 @@
   <link href="https://storage.googleapis.com/code.getmdl.io/1.0.1/material.teal-red.min.css" rel="stylesheet" rel="stylesheet">
   <link href="resources/css/theme.css" rel="stylesheet" type="text/css" media="all"/>
   <link href="resources/css/vlindertje.css" rel="stylesheet" type="text/css" media="all"/>
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="resources/javascript/vlindertje.js"></script>
 
 </head>
 
@@ -241,14 +244,9 @@
       </div>
       
       <div class="page-width banners">
-     	<div id="banner-13" class="banner">
-     		
+     	<div id="banner-13" class="banner" data-banner-index="13">
      	</div>
-     	<div id="banner-14" class="banner">
-     		
-     	</div>
-     	<div id="banner-15" class="banner">
-     		
+     	<div id="banner-14" class="banner" data-banner-index="14">
      	</div>
      </div>
 
@@ -313,7 +311,18 @@
   </div>
 
 	</footer>
-
+	</div>
+	
+	<script>
+  	
+		jQuery( document ).ready(function() {
+		
+			$jq = jQuery.noConflict();
+			loadBanners();
+		
+		});
+  	
+	</script>
 </body>
 
 <script>
