@@ -218,13 +218,13 @@
      </div>
      
      <div class="page-width banners">
-     	<div id="banner-1" class="banner">
+     	<div id="banner-1" class="banner" banner-index="1">
      		
      	</div>
-     	<div id="banner-2" class="banner">
+     	<div id="banner-2" class="banner" banner-index="2">
      		
      	</div>
-     	<div id="banner-3" class="banner">
+     	<div id="banner-3" class="banner" banner-index="3">
      		
      	</div>
      </div>
@@ -289,46 +289,50 @@
     </div>
   </div>
 
-	</footer>
+</footer>
 
 
-  </div>
-
-  <div id="slideshow-info" class="visually-hidden" aria-hidden="true">Use left/right arrows to navigate the slideshow or swipe left/right if using a mobile device</div>
-  </div>
-
-  <ul hidden="">
-    <li id="a11y-refresh-page-message">choosing a selection results in a full page refresh</li>
-    <li id="a11y-selection-message">press the space key then arrow keys to make a selection</li>
-  </ul>
-
-
-  <ul hidden="true">
-    <li id="a11y-new-window-message">Opens in a new window.</li>
-    <li id="a11y-external-message">Opens external website.</li>
-    <li id="a11y-new-window-external-message">Opens external website in a new window.</li>
-  </ul>
-  
   <script>
-  	var $jq = jQuery.noConflict();
   	
   	var loadBanners = function() {
 
   	    $jq.getJSON( "resources/json/banners.json", { format: "json" })
   		    .done(function( banners ) {
-  				var i = banners;
+  		    	
+  				fillBanners( banners );
+  				
   			})
   	  	    .always(function( xhr ) {
   				var i = xhr;
   			})
-  		.fail(function( jqxhr, textStatus, error ) {
-  	    var err = textStatus + ", " + error;
-  	    console.log( "Request Failed: " + err );
-  	})
+  			.fail(function( jqxhr, textStatus, error ) {
+  	    		var err = textStatus + ", " + error;
+  	    		console.log( "Request Failed: " + err );
+  			});
+  	};
+  	
+  	var fillBanners = function(banners) {
+  		
+  		var now = new Date();
+  		var fullDaysSinceEpoch = Math.floor(now/8.64e7);
+  		var shifter = 0;
+  		$jq( ".banner" ).each( function() {
+  			
+  			var elementID = 0 + $jq(this).attr("banner-index");
+  			var index = elementID + fullDaysSinceEpoch % 14;
+  			var banner = banners[index];
+  			var a = $jq("<a/>").attr("href",banner.link);
+  			var i = $jq("<img/>").attr("src",banner.img);
+  			a.append( i );
+  			$jq(this).append( a );
+  		});
+  		
+  	};
   	
 	jQuery( document ).ready(function() {
 	
-		loadMatchStatus();
+		$jq = jQuery.noConflict();
+		loadBanners();
 	
 	});
 
