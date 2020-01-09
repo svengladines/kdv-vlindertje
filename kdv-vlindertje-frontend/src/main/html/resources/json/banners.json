@@ -1,16 +1,16 @@
 [
-	{"id":"1","name":"Aardappelhof","img":"aardappelhof.png","link":"","group":1},
-	{"id":"2","name":"ASAP Slotenmaker","img":"asap-slotenmaker.jpg","link":"","group":1},
-	{"id":"3","name":"BTSS","img":"btss.jpg","link":"","group":1},
-	{"id":"4","name":"BVBA Wouters","img":"bvba-wouters.png","link":"","group":2},
-	{"id":"5","name":"Dierenarts Van Pelt","img":"dierenarts-van-pelt.jpg","link":"","group":2},
-	{"id":"6","name":"Feestzalen Vogelzang","img":"feestzalen-vogelzang.jpg","link":"","group":2},
-	{"id":"7","name":"Fiets SOS","img":"fiets-sos.jpg","link":"","group":3},
-	{"id":"8","name":"GM Optics","img":"gm-optics.jpg","link":"","group":3},
-	{"id":"9","name":"Het uilennest","img":"het-uilennest.jpg","link":"","group":3},
-	{"id":"10","name":"Lens Balloon","img":"lens-balloon.jpg","link":"","group":4},
+	{"id":"1","name":"Aardappelhof","img":"aardappelhof.png","link":"https://aardappelhof.be/","group":1},
+	{"id":"2","name":"ASAP Slotenmaker","img":"asap-slotenmaker.jpg","link":"https://www.asapslotenmaker.be/","group":1},
+	{"id":"3","name":"BTSS","img":"btss.jpg","link":"http://www.btss.be/","group":1},
+	{"id":"4","name":"BVBA Wouters","img":"bvba-wouters.png","link":"https://thuisverpleging-leuven.be/users/wouters-veronique","group":2},
+	{"id":"5","name":"Dierenarts Van Pelt","img":"dierenarts-van-pelt.jpg","link":"http://www.dierenarts-vanpelt.be","group":2},
+	{"id":"6","name":"Feestzalen Vogelzang","img":"feestzalen-vogelzang.jpg","link":"https://www.feestzalenvogelzang.be/","group":2},
+	{"id":"7","name":"Fiets SOS","img":"fiets-sos.jpg","link":"https://www.fietssos.be/","group":3},
+	{"id":"8","name":"MG Optics","img":"mg-optics.jpg","link":"http://www.mgoptics.be/","group":3},
+	{"id":"9","name":"Het uilennest","img":"het-uilennest.jpg","link":"http://www.hoevetoerisme-hetuilennest.be/default.aspx?main=2","group":3},
+	{"id":"10","name":"Lens Balloon","img":"lens-balloon.jpg","link":"http://www.copy-lens.be/","group":4},
 	{"id":"11","name":"Stuccopaint","img":"stuccopaint.png","link":"","group":4},
 	{"id":"12","name":"Vandermolen","img":"vandermolen.png","link":"","group":4},
-	{"id":"13","name":"Verandaluxe","img":"verandaluxe.png","link":"","group":5},
-	{"id":"14","name":"Vermeulen wood projects","img":"vermeulen-wood-projects.jpg","link":"","group":5}
+	{"id":"13","name":"Verandaluxe","img":"verandaluxe.png","link":"https://www.verand","group":5},
+	{"id":"14","name":"Vermeulen wood projects","img":"vermeulen-wood-projects.jpg","link":"https://www.facebook.com/vermeulenwoodprojects/","group":5}
 ]
