@@ -8,8 +8,8 @@
   	<name>kdv-vlindertje-frontend</name>
   	<description>kdv-vlindertje-frontend</description>
 	<parent>
-		<artifactId>colloseum-parent-pom</artifactId>
-		<groupId>be.occam.colloseum</groupId>
+		<groupId>be.occam</groupId>
+		<artifactId>occam-parent-pom</artifactId>
 		<version>1.0-LATEST-SNAPSHOT</version>
 	</parent>
 	
@@ -60,12 +60,12 @@
 	    				</goals>
 	    				<configuration>
 	    					<fromDir>${project.build.outputDirectory}</fromDir>
-	    					<toDir>/kdv-vlindertje</toDir>
+	    					<toDir>/web</toDir>
 	    					<includes>
 	    							*.html,resources/**,libraries/**
 	    					</includes>
-	    					<url>ftp://ftp.occamsoftware.be</url>
-	    					<serverId>ftp-occam</serverId>
+	    					<url>ftp://itafpanel05.itafhosting.be</url>
+	    					<serverId>ftp-vlindertje</serverId>
 	    					<controlEncoding>UTF-8</controlEncoding>
 	    				</configuration>
 	    			</execution>
