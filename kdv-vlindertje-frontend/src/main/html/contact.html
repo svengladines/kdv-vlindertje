@@ -288,6 +288,101 @@
             <label>Gsm-nummer</label><input type="tel" name="parent-2-mobile">
             <label>E-mailadres</label><input type="email" name="parent-2-email">
             
+            <h3>Algemene gegevens van het kind</h3>
+            <p>
+             	Is het kind reeds geboren ?
+            </p>
+            <select name="child-1-born">
+            	<option value="ja">Ja</option>
+            	<option value="nee">Nee</option>
+            </select>
+            
+            (Vermoedelijke) Geboortedatum van het kind *
+            <br/>
+            <label>Voornaam</label><input type="text" name="child-1-given-name">
+            <label>Familienaam</label><input type="text" name="child-1-family-name">
+            
+            <p>
+            Geslacht
+            </p>
+            <select name="child-1-gender">
+            	<option value="man">Man</option>
+            	<option value="vrouw">Vrouw</option>
+            </select>
+            
+            <p>
+            Is dit een pleegkind ?
+            </p>
+            <select name="child-1-foster">
+            	<option value="ja">Ja</option>
+            	<option value="nee">Nee</option>
+            </select>
+            
+            <p>
+            Startdatum Opvang (Let op! de overeengekomen startdatum ligt bij ondertekening van het contract vast!)
+            </p>
+            
+            <h3>Extra kind aanmelden</h3>
+            
+             <p>
+            Wenst u een extra kind aan te melden ?
+            </p>
+            <select id="second" name="second">
+            	<option value="ja">Ja</option>
+            	<option value="nee">Nee</option>
+            </select>
+            
+            <div id="second-child" class="hidden">
+            
+	            <h3>Algemene gegevens van het kind</h3>
+	            <p>
+	             	Is het kind reeds geboren ?
+	            </p>
+	            <select name="child-2-born">
+	            	<option value="ja">Ja</option>
+	            	<option value="nee">Nee</option>
+	            </select>
+	            
+	            (Vermoedelijke) Geboortedatum van het kind *
+	            <br/>
+	            <label>Voornaam</label><input type="text" name="child-2-given-name">
+	            <label>Familienaam</label><input type="text" name="child-2-family-name">
+	            
+	            <p>
+	            Geslacht
+	            </p>
+	            <select name="child-2-gender">
+	            	<option value="man">Man</option>
+	            	<option value="vrouw">Vrouw</option>
+	            </select>
+	            
+	            <p>
+	            Is dit een pleegkind ?
+	            </p>
+	            <select name="child-2-foster">
+	            	<option value="ja">Ja</option>
+	            	<option value="nee">Nee</option>
+	            </select>
+	            
+	            <p>
+	            Startdatum Opvang (Let op! de overeengekomen startdatum ligt bij ondertekening van het contract vast!)
+	            </p>
+            
+            </div>
+            
+            <div>
+            
+	            <h3>Keuze opvang</h3>
+	            
+	            Type opvangplan (Let op ! Het overeengekomen opvangplan ligt tot 1 jaar ( 365 dagen ) na de startdatum vast en kan in deze periode niet verminderd worden!) *
+	            
+	            <select name="child-2-foster">
+		           	<option value="vast">Vast (Min. 3 volle dagen of 5 halve dagen per week)</option>
+		           	<option value="variabel">Variabel = wisselende opvangdagen per week/maand (Min. 3 volle dagen of 5 halve dagen per week)</option>
+		        </select>
+	            
+	            </div>
+            
             </form>
             
          </div>
